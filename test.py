@@ -1,8 +1,15 @@
 import random
-x = input("Enter a number: ")
+x = int(input("Enter a number: "))
 
 y = random.randint(1, 100)
-if x == y:
-    print("You win!")
-else:
-    print("You lose!")
+
+cont = True
+
+while (cont):
+    if x > y:
+        print("Too high")
+    elif x < y:
+        print("Too low")
+    else:
+        print("Correct!")
+        cont = False
